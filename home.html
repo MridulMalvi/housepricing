@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>Enter House Details:</h2>
+    <form action="/predict" method="post">
+        <label>MedInc: <input type="number" step="any" name="MedInc"></label><br><br>
+        <label>HouseAge: <input type="number" step="any" name="HouseAge"></label><br><br>
+        <label>AveRooms: <input type="number" step="any" name="AveRooms"></label><br><br>
+        <label>AveBedrms: <input type="number" step="any" name="AveBedrms"></label><br><br>
+        <label>Population: <input type="number" step="any" name="Population"></label><br><br>
+        <label>AveOccup: <input type="number" step="any" name="AveOccup"></label><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
