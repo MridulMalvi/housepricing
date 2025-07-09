@@ -1,4 +1,4 @@
-## housepricing
+## Housepricing
 
 ## Software And Tools Required
 1.[Github Account](https://github.com)
